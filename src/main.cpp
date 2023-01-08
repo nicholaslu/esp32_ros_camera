@@ -6,7 +6,6 @@
 
 #include <ros.h>
 #include <sensor_msgs/CompressedImage.h>
-
 //
 // WARNING!!! PSRAM IC required for UXGA resolution and high JPEG quality
 //            Ensure ESP32 Wrover Module or other board with PSRAM is selected
@@ -25,8 +24,8 @@
 
 #include "camera_pins.h"
 
-const char* ssid     = "Chino Private Network";
-const char* password = "23332333";
+extern const char* ssid;
+extern const char* password;
 // Set the rosserial socket server IP address
 IPAddress server(192,168,31,73);
 // Set the rosserial socket server port
